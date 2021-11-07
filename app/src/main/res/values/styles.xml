@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">#fff</item>
+    </style>
+    <style name="actionTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">#fff</item>
+    </style>
+
+
+    <style parent="ThemeOverlay.AppCompat.Dark.ActionBar" name="AppTheme.AppBarOverlay"/>
+
+    <style parent="ThemeOverlay.AppCompat.Light" name="AppTheme.PopupOverlay"/>
+
+
+    <style parent="@style/TextAppearance.AppCompat.Subhead" name="TextAppearance.Subhead.Bold">
+
+    <item name="android:textStyle">bold</item>
+
+</style>
+
+
+    <style parent="@style/TextAppearance.AppCompat.Medium" name="TextAppearance.Medium.Bold">
+
+    <item name="android:textStyle">bold</item>
+
+</style>
+
+    <style parent="@style/AppTheme" name="EditText.Grey">
+
+    <item name="colorControlActivated">@color/grey_60</item>
+
+    <item name="colorControlHighlight">@color/grey_60</item>
+
+    <item name="colorControlNormal">@color/grey_40</item>
+
+</style>
+
+
+    <style parent="@style/AppTheme" name="EditText.Flat.Grey">
+
+    <item name="android:textColorHint">@color/grey_40</item>
+
+
+    <item name="android:textColor">@color/grey_90</item>
+
+</style>
+
+
+    <style parent="@style/AppTheme" name="Checkbox.Blue">
+
+    <item name="colorPrimary">@color/blue_600</item>
+
+    <item name="colorAccent">@color/blue_600</item>
+
+    <item name="colorControlActivated">@color/blue_600</item>
+
+    <item name="colorControlHighlight">@color/blue_600</item>
+
+    <item name="colorControlNormal">@color/grey_40</item>
+
+</style>
+
+
+</resources>

@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">Corncob</string>
+    <string name="feeds_nav">Feed</string>
+    <string name="notifications_nav">Notifications</string>
+    <string name="messages_nav">Messages</string>
+    <string name="account_nav">Account</string>
+    <string name="signup_text">New user? </string>
+    <string name="login_text">Already a user? </string>
+    <string name="signup">Signup</string>
+    <string name="login">Sign in</string>
+    <string name="google_login">Login using google</string>
+    <string name="facebook_login">Login using google</string>
+    <string name="google_signup">Google</string>
+    <string name="facebook_signup">facebook</string>
+    <string name="email">email</string>
+    <string name="id_number">id number</string>
+    <string name="password">password</string>
+    <string name="username_desc">username icon</string>
+    <string name="id_desc">id icon</string>
+    <string name="password_desc">password icon</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="feed1">feed1</string>
+    <string name="sample_graph">Sample of a paragraph developed by definition: In the paragraph below, the writer defines the term paradigm, which is a key term in her thesis. … (1)In nursing research, paradigms are essential to help to place the research into a broader context.</string>
+    <string name="authView">Welcome,</string>
+    <string name="authDesc">access your account.</string>
+    <string name="login_signup">Login/Signup</string>
+    <string name="x">X</string>
+    <string name="sample_text1">14321 Saddle Wood Dr, North Little Rock \nAR, 72117</string>
+    <string name="name">full name</string>
+    <string name="password_confirm">re-enter password</string>
+    <string name="messageHead">Message Head</string>
+    <string name="messageBody">Message Body</string>
+    <string name="messageTitle">Messages</string>
+    <string name="accountTitle">Account</string>
+    <string name="fertilizer_title">Fertilizer News</string>
+    <string name="fertilizer_news">The supply of fertilizers will be done to the below mentioned regions later next month. Apply for farm subsidies before the deadline to avoid inconveniences.</string>
+    <string name="supply_dates">Important Dates</string>
+    <string name="supply_info">Click to view important dates in the NCPB Farmers calender.</string>
+    <string name="maize_title">Maize Delivery</string>
+    <string name="maize_info">Maize and other cereals are to be picked from specific centers. Ensure you are at the delivery stations on time.Click to view delivery stations.</string>
+    <string name="AOB">System Change</string>
+    <string name="AOB_text">NCPB have changed how supplies and applications work. From next season, all transactions and applications will be done through this app. In case of anything contact the National Cereals and Produce Board.</string>
+    <string name="govt_news">Market News</string>
+    <string name="govt_body">The amount allocated by the government for cereal and fertilizer purchase.</string>
+
+
+    <string name="others">Other News</string>
+    <string name="farmer_details">Farmer Details</string>
+    <string name="farm_details">Farm Details</string>
+    <string name="reset">Reset Password</string>
+    <string name="id">national ID</string>
+    <string name="town">town</string>
+    <string name="county">county</string>
+    <string name="submit">Save</string>
+    <string name="farmer">Farmer details</string>
+    <string name="farm">Farm details</string>
+    <string name="acres">acres</string>
+    <string name="crop">crop grown</string>
+    <string name="bags">bags harvested</string>
+    <string name="fertilizer">bags of fertilizer used</string>
+    <string name="price">price per bag</string>
+    <string name="legal">Legal Documents</string>
+    <string name="number">mobile number</string>
+    <string name="legal_text">Upload a document showing that you are the owner or own a lease of the farm mentioned above. e.g Lease Agreement, Title Deed etc.</string>
+    <string name="farmerText">Provide additional information about yourself</string>
+    <string name="farmText">Information about your farm</string>
+    <string name="more">More news</string>
+    <string name="plot">plot number</string>
+    <string name="options">Options</string>
+    <string name="applyfert">Apply for fertilizers</string>
+    <string name="applypick">Apply for Delivery</string>
+    <string name="history">History</string>
+    <string name="yield">expected yield</string>
+    <string name="date">dd/mm/yyyy</string>
+    <string name="type">type of fertilizer</string>
+    <string name="apply">Apply</string>
+    <string name="amount">amount needed</string>
+    <string name="reports">Reports</string>
+    <string name="info">Information</string>
+    <string name="settings">User Settings</string>
+    <string name="application1">Fertilizer subsidy application</string>
+    <string name="application2">Yield pick up application</string>
+    <string name="helper1">Apply to receive fertilizers and other farm subsidies from the government at the right prices </string>
+    <string name="helper2">Let us know when to collect your yield and sell your product for the right price. Avoid middlemen!</string>
+    <string name="profile_name">John Doe</string>
+    <string name="update_farm">Update farm details</string>
+    <string name="sample_number">+254 712 345 678</string>
+    <string name="region">Region</string>
+    <string name="county_sample">Trans Nzoia</string>
+    <string name="plot_number">Plot Number</string>
+    <string name="plot_sample">Q79154</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="doe_email">doejohn@gmail.com</string>
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="app_information">App information</string>
+    <string name="change_password">Change password</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="upload">Upload</string>
+    <string name="upload_sample">sample.pdf</string>
+    <string name="upload_sample_2_pdf">upload_sample_2.pdf</string>
+    <string name="compose">Compose</string>
+    <string name="developer">Developer: Arthur Pundo</string>
+    <string name="version">Version: V1.0.0</string>
+    <string name="client">Client: National Cereals and Produce Board</string>
+    <string name="copyright">Copyright 2019</string>
+    <string name="centers">Delivery Centers</string>
+    <string name="view_centers">View Centers</string>
+    <string name="_404_erro">404 ERROR!</string>
+    <string name="check_net">Check your internet connection and try again</string>
+    <string name="retry">Retry</string>
+    <string name="application_deadline">Application Deadline</string>
+    <string name="pay">Make payment</string>
+    <string name="fertilizer_application">Fertilizer Application</string>
+    <string name="profile">Profile</string>
+    <string name="trial">trial</string>
+    <string name="_1234">1234</string>
+    <string name="verify">verify</string>
+    <string name="vetted">Farm details being vetted</string>
+    <string name="vetString">Information about your farm is being verified. We\'ll get back to you shortly, you\'ll be able to use the app then.</string>
+    <string name="supplydates">Mkulima Bora supply dates</string>
+    <string name="yield_pickup_begin">Yield delivery begin</string>
+    <string name="yield_pickup_dates">Yield delivery dates</string>
+    <string name="pickupHead">Pick up centers within your county, once harvested and confirmed, take your yield to any of the below for delivery.</string>
+    <string name="center">Centers</string>
+    <string name="centers_in">Centers in</string>
+    <string name="messagehead">MessageHead</string>
+    <string name="needed">bags of fertilizer needed</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string-array name="counties">
+        <item>County</item>
+        <item>Baringo</item>
+        <item>Bomet</item>
+        <item>Bungoma</item>
+        <item>Busia</item>
+        <item>Elgeyo Marakwet</item>
+        <item>Embu</item>
+        <item>Garissa</item>
+        <item>Homa Bay</item>
+        <item>Isiolo</item>
+        <item>Kajiado</item>
+        <item>Kakamega</item>
+        <item>Kericho</item>
+        <item>Kiambu</item>
+        <item>Kilifi</item>
+        <item>Kirinyaga</item>
+        <item>Kisii</item>
+        <item>Kisumu</item>
+        <item>Kitui</item>
+        <item>Kwale</item>
+        <item>Laikipia</item>
+        <item>Lamu</item>
+        <item>Machakos</item>
+        <item>Makueni</item>
+        <item>Mandera</item>
+        <item>Meru</item>
+        <item>Migori</item>
+        <item>Marsabit</item>
+        <item>Mombasa</item>
+        <item>Muranga</item>
+        <item>Nairobi</item>
+        <item>Nakuru</item>
+        <item>Nandi</item>
+        <item>Narok</item>
+        <item>Nyamira</item>
+        <item>Nyandarua</item>
+        <item>Nyeri</item>
+        <item>Samburu</item>
+        <item>Siaya</item>
+        <item>Taita Taveta</item>
+        <item>Tana River</item>
+        <item>Tharaka Nithi</item>
+        <item>Trans Nzoia</item>
+        <item>Turkana</item>
+        <item>Uasin Gishu</item>
+        <item>Vihiga</item>
+        <item>Wajir</item>
+        <item>West Pokot</item>
+    </string-array>
+    <string-array name="type">
+        <item>Type of Fertilizer</item>
+        <item>Planting Fertilizer</item>
+        <item>Top Dressing fertilizer</item>
+    </string-array>
+    <string-array name="crop">
+        <item>Crop grown</item>
+        <item>Maize</item>
+        <item>Wheat</item>
+        <item>Barley</item>
+    </string-array>
+    <string-array name="planting">
+        <item>DAP 18:46:0</item>
+        <item>NPK 23:23:0</item>
+        <item>NPK 17:17:17</item>
+    </string-array>
+    <string-array name="topdress">
+        <item>CAN 26%N</item>
+        <item>UREA 46%N</item>
+        <item>Sulphate of Ammonia 21%</item>
+    </string-array>
+
+
+</resources>

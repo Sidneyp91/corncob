@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context=".form.pickup">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStartWithNavigation="0sp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        android:layout_gravity="center_horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/famTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:text="@string/applypick"
+                android:textSize="30sp"
+                android:paddingTop="0sp"/>
+
+
+            <View
+                android:layout_width="400sp"
+                android:layout_height="1sp"
+                android:background="@color/grey"/>
+            <TextView
+                android:id="@+id/famText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:text="@string/helper2"
+                android:textSize="18sp"
+                android:paddingTop="0sp"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12sp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/plot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/plot_number"
+                    app:endIconMode="custom"
+                    app:endIconDrawable="@drawable/number"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue_grey_300"
+                        android:inputType="number"
+                        android:editable="false"
+                        tools:ignore="Deprecated" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+
+                         <Spinner
+                                    android:id="@+id/crop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:drawable/btn_dropdown"
+                                    android:spinnerMode="dropdown"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/acres"
+                    app:endIconMode="custom"
+                    app:endIconDrawable="@drawable/acres"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue_grey_300"
+                        android:inputType="number"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/bags"
+                    app:endIconMode="custom"
+                    app:endIconDrawable="@drawable/sack"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue_grey_300"
+                        android:inputType="number"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+          <!--      <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/amount"
+                    app:endIconMode="custom"
+                    app:endIconDrawable="@drawable/sack"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue_grey_300"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+                <Spinner
+                    android:id="@+id/county"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp"/>
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_marginRight="-4dp"
+                    android:background="@drawable/button_rounded_green_300"
+                    android:text="@string/apply"
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey_3"
+                    android:layout_marginTop="15sp"/>
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="20sp"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            -->
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

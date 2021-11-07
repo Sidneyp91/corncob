@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.centers"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="MissingConstraints">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStartWithNavigation="0sp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <View
+        android:layout_width="0sp"
+        android:layout_height="12sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/pickupHead"
+        android:layout_margin="15sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:text="@string/centers_in"/>
+        <View
+            android:layout_width="12sp"
+            android:layout_height="0sp"/>
+
+        <TextView
+            android:id="@+id/county"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:text="@string/county"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="300sp"
+        android:layout_height="1sp"
+        android:layout_gravity="center"
+        android:background="@color/black"/>
+
+    <View
+        android:layout_width="0sp"
+        android:layout_height="15sp"/>
+
+    <TextView
+        android:id="@+id/center1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="center1"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+    <View
+        android:layout_width="0sp"
+        android:layout_height="15sp"/>
+    <TextView
+        android:id="@+id/center2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="center2"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+    <View
+        android:layout_width="0sp"
+        android:layout_height="15sp"/>
+
+    <TextView
+        android:id="@+id/center3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="center3"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+    <View
+        android:layout_width="0sp"
+        android:layout_height="15sp"/>
+
+    <TextView
+        android:id="@+id/center4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="center4"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

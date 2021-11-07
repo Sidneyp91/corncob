@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parentLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <!--<ImageView
+        android:id="@+id/icon"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/notification"/>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/notification"/>
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_toEndOf="@+id/icon"
+        android:text="@string/govt_news"
+        android:paddingStart="10sp"
+        android:paddingEnd="5sp"
+        android:padding="10sp"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

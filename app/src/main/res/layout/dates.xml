@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.dates">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="MissingConstraints">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStartWithNavigation="0sp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <CalendarView
+        android:id="@+id/dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        />
+
+    <View
+        android:layout_width="0sp"
+        android:layout_height="15sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@android:color/white"
+        app:cardBackgroundColor="@color/grey_3"
+        app:cardCornerRadius="2sp"
+        app:cardElevation="2sp">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="5sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingBottom="15sp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25sp"
+                    android:gravity="center_vertical"
+                    android:text="Mkulima Bora application deadline"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="5sp"
+                    android:layout_height="0sp" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/deadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="5sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="0sp"
+        android:layout_height="12sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@android:color/white"
+        app:cardBackgroundColor="@color/grey_3"
+        app:cardCornerRadius="2sp"
+        app:cardElevation="2sp">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="5sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingBottom="15sp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/supplydates"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="5sp"
+                    android:layout_height="0sp" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/beginsupply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+                <View
+                    android:layout_width="5sp"
+                    android:layout_height="0sp"/>
+                <View
+                    android:layout_width="20sp"
+                    android:layout_height="3sp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/black"/>
+                <View
+                    android:layout_width="5sp"
+                    android:layout_height="0sp"/>
+                <TextView
+                    android:id="@+id/endsupply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="5sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="0sp"
+        android:layout_height="12sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@android:color/white"
+        app:cardBackgroundColor="@color/grey_3"
+        app:cardCornerRadius="2sp"
+        app:cardElevation="2sp">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="5sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingBottom="15sp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/yield_pickup_dates"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="5sp"
+                    android:layout_height="0sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/yieldStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="5sp"
+                    android:layout_height="0sp"/>
+                <View
+                    android:layout_width="20sp"
+                    android:layout_height="3sp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/black"/>
+                <View
+                    android:layout_width="5sp"
+                    android:layout_height="0sp"/>
+                <TextView
+                    android:id="@+id/yieldEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="0sp"
+                android:layout_height="5sp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="0sp"
+        android:layout_height="12sp" />
+
+    </LinearLayout>
+</LinearLayout>

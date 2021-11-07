@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "281661211378",
+    "firebase_url": "https://corncob-c0d90.firebaseio.com",
+    "project_id": "corncob-c0d90",
+    "storage_bucket": "corncob-c0d90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281661211378:android:11708883bb79e688",
+        "android_client_info": {
+          "package_name": "com.pundo.corncob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281661211378-m067sdgqkt78d9cvd1mlhhpu3f1vmigj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtWuNmNJLxvkocfvcM5Ok63JKCtytEkdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281661211378-ttsrevrriih6d8bb0br7aikrumoateij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

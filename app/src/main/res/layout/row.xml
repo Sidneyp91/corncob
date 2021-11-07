@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/auth_log"
+        android:id="@+id/auth_image"
+        android:onClick="loginAction"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/auth_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:text="@string/login"
+            android:textSize="25sp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:onClick="loginAction"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            app:titleEnabled="false">
+
+            <ImageView
+                android:id="@+id/feed_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/background"
+                android:contentDescription="@string/authDesc"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="pin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/overlay_dark_40"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    app:contentInsetStartWithNavigation="0sp"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accountTitle"
+                    android:textSize="40sp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+<View
+    android:layout_width="0sp"
+    android:layout_height="15sp"/>
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="30sp"
+        android:layout_marginStart="12sp"
+        android:text="@string/authView"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:paddingEnd="5dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="5sp"/>
+    <View
+        android:layout_width="12sp"
+        android:layout_height="0sp"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_signup"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            app:icon="@drawable/logout"
+            android:onClick="loginAction"
+            android:layout_gravity="left"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="0sp"
+        android:layout_height="10sp"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingTop="5sp">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@color/grey_40" />
+
+            <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:minHeight="70dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:focusable="true">
+
+                <ImageButton
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:background="@android:color/transparent"
+                    android:tint="@color/grey_60"
+                    app:srcCompat="@drawable/account" />
+
+                <View
+                    android:layout_width="20sp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/profile"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="10sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:layout_width="10sp"
+                    android:layout_height="10sp"
+                    android:background="@android:color/transparent"
+                    android:tint="@color/grey_60"
+                    app:srcCompat="@drawable/next" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:minHeight="70dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:focusable="true"
+                android:onClick="Info">
+
+                <ImageButton
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:background="@android:color/transparent"
+                    android:tint="@color/grey_60"
+                    app:srcCompat="@drawable/information" />
+
+                <View
+                    android:layout_width="20sp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/app_information"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="10sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:layout_width="10sp"
+                    android:layout_height="10sp"
+                    android:background="@android:color/transparent"
+                    android:tint="@color/grey_60"
+                    app:srcCompat="@drawable/next" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

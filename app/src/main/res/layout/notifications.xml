@@ -1,0 +1,50 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@android:color/holo_green_dark"
+        app:cardBackgroundColor="@color/grey_3"
+        android:onClick="dates"
+        app:cardCornerRadius="2sp"
+        app:cardElevation="2sp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/notificationH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/messageHead"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
